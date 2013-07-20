@@ -1,0 +1,180 @@
+!!!
+%html
+  %head
+
+    %title OpenSky Development
+
+    %link{href:'css/theme.css',type:'text/css',rel:'stylesheet'}
+    %link{href:'css/font-awesome.css',type:'text/css',rel:'stylesheet'}
+    %link{href:'css/custom.css',type:'text/css',rel:'stylesheet'}
+
+    %meta{name:'viewport',content:'width=device-width, initial-scale=1'}
+    %meta{name:'description',content:"OpenSky Development makes software that doesn't suck."}
+    %meta{name:'keywords',content:'Macintosh, MacOS, iOS, iPad, Software, Development, Web, Ruby on Rails, Apps, Code'}
+    %meta{name:'rating',content:'general'}
+
+  %body.blue
+
+    / Header
+    %header#home
+      .boxed
+        .logo
+          %h1
+            %a{href:'index.html'}
+              OPEN
+              %span><
+                SKY
+        %nav
+          %ul
+            %li
+              %a{href:'#home'}home
+            %li
+              %a{href:'#services'}services
+            %li
+              %a{href:'#work'}work
+            %li
+              %a{href:'#contact'}contact
+
+    / Splash
+    %section.splash#home
+      .boxed
+        %p We make software that doesn't suck.
+
+    / Services
+    %section.row.light#services
+      .boxed
+        / begin services
+        %article.service
+          .three.column
+            .icon
+              %i.icon-code.batch
+            %h2 Code
+            %p Each line of code is lovingly handcrafted
+
+          .three.column
+            .icon
+              %i.icon-user.batch
+            %h2 User Friendly
+            %p Each project is tailor-made to fit your users
+
+          .three.column.last
+            .icon
+              %i.icon-money.batch
+            %h2 Affordable
+            %p Our services a affordable, meaning you can deliver a better experience for less cash
+
+    / Work
+    %section.row.dark#work
+      .boxed.cc
+        %article.work
+          %h1.headline
+            Our Work
+            %br
+            %span Some of the things we've been working on
+
+          .four.column
+            .app#brokr
+              %a{href:'http://taps.io/brokr',target:'_blank'}
+                .icon
+                  %img{src:'assets/brokr.png'}
+              %h3
+                Brokr
+                %span iOS
+
+              %p The best way to view the stocks important to you. 
+              %p Checking a stock price can be a hassle. Brokr removes that hassle. A simple, elegant view displays the the current price and the daily change.
+
+          .four.column
+            .app#cs3
+              %a{href:'http://taps.io/cs3',targe:'_blank'}
+                .icon
+                  %img{src:'assets/cs-icon.png'}
+              %h3 
+                Color Slides 3
+                %span iOS
+              %p Color Slides is a quick and easy RGB Color picker. Fire it up and slide the values for Red, Green, and Blue around. 
+              %p Once you have your color, just copy the values into whatever RGB input field you may have. It's that simple!
+
+          .four.column
+            .app#aspj
+              %a{href:'http://appstore.com/aspectjunkie',target:'_blank'}
+                .icon
+                  %img{src:'assets/aspj-icon.png'}
+              %h3 
+                Aspect Junkie
+                %span iOS
+              %p Aspect Junkie is a quick and easy aspect ratio calculator. Just type one known dimension into the width/height field, select the desired ratio, then press "Calculate." It's that easy!
+
+          .four.column.last
+            .app#txtbox
+              %a{href:'http://www.txtbox.co',target:'_blank'}
+                .icon
+                  %img{src:'assets/txtbox-preview.png'}
+              %h3 
+                TXTBox
+                %span Web
+              %p Your stupid simple note app
+              %p There are no accounts. No private/public notes, your note just has a link and that's it. Notes are saved every few seconds as you type.
+
+      / Contact
+      %section.row.light#contact
+        .boxed
+          %article.contact
+            %h1.headline
+              Contact Us
+              %br
+              %span We would love to hear from you
+
+            %ul.contact-list
+              %li
+                %a{href:'#'}
+                  %i.icon-twitter
+                    %span Twitter
+              %li
+                %a{href:'#'}
+                  %i.icon-envelope-alt 
+                    %span Email
+              %li
+                %a{href:'#'}
+                  %i.icon-phone 
+                    %span Phone
+              %li
+                %a{href:'#'}
+                  %i.icon-github 
+                    %span GitHub
+
+    %footer.row.dark
+      .boxed
+        %span>< &copy;2013
+        %span#copy-year<
+        OpenSky LLC
+
+
+
+
+
+
+  / Javascript
+  %script{src:'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js',type:'text/javascript'}
+  %script{src:"js/modernizr-2.6.1.min.js",type:"text/javascript"}
+  %script{src:"js/lightbox.js",type:"text/javascript"}
+  %script{src:"js/slider.js",type:"text/javascript"}
+  %script{src:"js/map.js",type:"text/javascript"}
+  %script{src:"js/scroll.js",type:"text/javascript"}
+  %script{src:"js/main.js",type:"text/javascript"}
+
+  :javascript
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '51e8e2fff5a1f57d9f00004a');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+
+
+
